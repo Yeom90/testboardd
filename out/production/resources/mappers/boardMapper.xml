@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="boardMapper">
+
+    <insert id="create" parameterType="BoardVO">
+        insert into tb_emp_manage (
+            empId,
+            empName,
+            interphone,
+            companyName,
+            teamName,
+            athority,
+            isWorking,
+            inDate,
+            outDate,
+            extraInfo
+        )
+        values(
+            #{empId},
+            #{empName},
+            #{interphone},
+            #{companyName},
+            #{teamName},
+            #{athority},
+            #{isWorking},
+            #{inDate},
+            #{outDate},
+            #{extraInfo}
+              )
+    </insert>
+
+    <select id="read" resultType="BoardVO">
+        select
+            bno,
+            empId,
+            empName,
+            interphone,
+            companyName,
+            teamName,
+            athority,
+            isWorking,
+            inDate,
+            outDate,
+            register,
+            regDate,
+            extraInfo
+        from tb_emp_manage where bno = #{bno}
+    </select>
+
+    <update id="update">
+        update tb_emp_manage set
+            empName = #{empName},
+            interphone = #{interphone},
+            companyName = #{companyName},
+            teamName = #{teamName},
+            athority = #{athority},
+            isWorking = #{isWorking},
+            inDate = #{inDate},
+            outDate = #{outDate},
+            extraInfo = #{extraInfo}
+        where bno = #{bno}
+    </update>
+
+    <delete id="delete">
+        delete from tb_emp_manage where bno = #{bno}
+    </delete>
+
+    <select id="listAll" resultType="BoardVO">
+        select
+            bno,
+            empId,
+            empName,
+            interphone,
+            companyName,
+            athority,
+            isWorking,
+            inDate,
+            outDate,
+            pwdErCnt,
+            register,
+            regDate
+        from tb_emp_manage
+    </select>
+
+    <select id="checkId" resultType="Integer">
+        select count(empId) from tb_emp_manage where empId = #{emp_id}
+    </select>
+
+    <select id="checkInterphone" resultType="Integer">
+        select count(interphone) from tb_emp_manage where interphone = #{interphone}
+    </select>
+
+    <!--
+        sql 컬럼명과 동일하지 않을 경우 발생되는 문제 때문에 resultMap 을 통해 일치 시키는 작업
+        <resultMap id="BoardResultMap" type="BoardDTO">
+            <id property="bno" column="bno"/>
+            <result property="content" column="content"/>
+            <result property="writer" column="writer"/>
+            <result property="regdate" column="regdate"/>
+            <result property="viewcnt" column="viewcnt"/>
+        -->
+</mapper>
