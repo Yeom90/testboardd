@@ -5,6 +5,7 @@
 
 <mapper namespace="boardMapper">
 
+    <!-- 사원 정보 등록 -->
     <insert id="create" parameterType="BoardVO">
         insert into tb_emp_manage (
             empId,
@@ -32,6 +33,7 @@
               )
     </insert>
 
+    <!-- 사원정보 읽기 -->
     <select id="read" resultType="BoardVO">
         select
             bno,
@@ -50,8 +52,9 @@
         from tb_emp_manage where bno = #{bno}
     </select>
 
-    <update id="update">
-        update tb_emp_manage set
+    <!-- 사원정보 수정 -->
+    <update id="update" parameterType="BoardVO">
+        UPDATE tb_emp_manage SET
             empName = #{empName},
             interphone = #{interphone},
             companyName = #{companyName},
@@ -60,14 +63,17 @@
             isWorking = #{isWorking},
             inDate = #{inDate},
             outDate = #{outDate},
+            register = #{register},
             extraInfo = #{extraInfo}
-        where bno = #{bno}
+        WHERE bno = #{bno}
     </update>
 
+    <!-- 사원정보 삭제 -->
     <delete id="delete">
         delete from tb_emp_manage where bno = #{bno}
     </delete>
 
+    <!-- 사원 목록 불러오기 -->
     <select id="listAll" resultType="BoardVO">
         select
             bno,
@@ -83,23 +89,21 @@
             register,
             regDate
         from tb_emp_manage
+        order by bno desc
     </select>
 
+    <!-- 사원 아이디 중복체크 -->
     <select id="checkId" resultType="Integer">
         select count(empId) from tb_emp_manage where empId = #{emp_id}
     </select>
 
+    <!-- 사원 내선번호 중복체크 -->
     <select id="checkInterphone" resultType="Integer">
         select count(interphone) from tb_emp_manage where interphone = #{interphone}
     </select>
 
-    <!--
-        sql 컬럼명과 동일하지 않을 경우 발생되는 문제 때문에 resultMap 을 통해 일치 시키는 작업
-        <resultMap id="BoardResultMap" type="BoardDTO">
-            <id property="bno" column="bno"/>
-            <result property="content" column="content"/>
-            <result property="writer" column="writer"/>
-            <result property="regdate" column="regdate"/>
-            <result property="viewcnt" column="viewcnt"/>
-        -->
+    <!-- 총 사원정보 개수 -->
+    <select id="listAllCnt" resultType="Integer">
+        select count(*) from tb_emp_manage
+    </select>
 </mapper>

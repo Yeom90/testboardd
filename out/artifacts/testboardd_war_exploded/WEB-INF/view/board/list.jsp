@@ -164,22 +164,6 @@
                 alert('예외')
             }
 
-            //ajax로 보낼 데이터를 담는 리터럴 객체
-            let reg_data = {
-                "empId" : $("#empId").val(),
-                "empName" : $("#empName").val(),
-                "interphone" : $("#interphone").val(),
-                "team" : $("#teamCode").val(),
-                "athority" : $("#athority").val(),
-                "isWorking" : $("#isWorking").val(),
-                "inDate" : $("#inDate").val(),
-                "outDate" : $("#outDate").val(),
-                "register" : $("#extraInfo").val()
-            };
-
-            //let test = $("#empRegForm").serialize();
-            //console.log("empRegForm의 ID: " + test.empId);
-            console.log("empId: " + reg_data.empId);
 
             //summit 클릭시 이벤트 처리 (사원 저장 버튼)
             $.ajax({

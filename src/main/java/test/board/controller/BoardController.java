@@ -1,12 +1,12 @@
 package test.board.controller;
 
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import test.board.paging.PageTest;
 import test.board.service.BoardServiceImpl;
 import test.board.vo.BoardVO;
 
@@ -30,23 +30,42 @@ public class BoardController {
 
     //글 목록
     @RequestMapping("/")
-    public ModelAndView listPost() throws Exception{
-        List<BoardVO> list = boardServiceImpl.getListAll();
+    public ModelAndView listPost(@RequestParam(defaultValue="1") int curPage) throws Exception{
+
+        //페이징 할 인스턴스 만들기
+        PageTest pageTest = new PageTest();
+
+        //글 목록 가져오기
+        List<BoardVO> list = boardServiceImpl.getListAll(pageTest);
+
         ModelAndView mav = new ModelAndView("/board/test_list");
         mav.addObject("board", list);
+        mav.addObject("pageMaker", list);
+        mav.addObject("listAllCnt", boardServiceImpl.listAllCnt());
+        logger.info("listAllCnt: " + String.valueOf(boardServiceImpl.listAllCnt()));
         return mav;
     }
+
+    @Test
+    public void testListPaging() throws Exception{
+        PageTest pageTest = new PageTest();
+        pageTest.setPage(3);
+        pageTest.setPerPageNum(10);
+
+        List<BoardVO> empList = boardServiceImpl.getListAll(pageTest);
+
+        for(BoardVO boardVO : empList){
+            logger.info(boardVO.getEmpId() + ":" + boardVO.getEmpName());
+        }
+    }
+
 
     //글 작성 요청 처리
     @RequestMapping(value = "/write", method = RequestMethod.POST)
     @ResponseBody
-    public String insert(@ModelAttribute BoardVO vo, RedirectAttributes redirectAttributes) throws Exception{
+    public void insert(@ModelAttribute BoardVO vo) throws Exception{
         logger.info("Controller: " + vo.toString()); //vo에 어떤데이터가 담겨오는지 로그 찍기
         boardServiceImpl.create(vo);
-        //리다이렉트 직전 플래시에 저장하는 메소드다. 리다이렉트 이후에는 소멸한다.
-        //플래시 : FlashMap 스프링에서 파라미터를 간편하게 전달하기 위한 자료구조, URL에 데이터를 노출시키지 않으면서 데이터를 전달, 세션에 넣기에는 적합하지 않고 spring에서 자동으로 값을 지워줌(휘발성)
-        redirectAttributes.addFlashAttribute("msg", "regSuccess");
-        return "redirect:/";
     }
 
     //글 조회
@@ -57,35 +76,25 @@ public class BoardController {
         logger.info("boardNo :"+boardNo);
         //웹문서에서는 데이터를 문자열로 보내기 때문에 int형으로 형변환을 해줘야 함
         int bno = Integer.parseInt(boardNo); //String을 int형으로 형변환
-        logger.info("bno :"+bno);
-
-        logger.info(String.valueOf(boardServiceImpl.read(bno)));
+        logger.info(String.valueOf(boardServiceImpl.read(bno))); //boardServiceImpl.read(bno)의 리턴값을 문자열로 바꿔 로그 출력
         return boardServiceImpl.read(bno); // 비동기식으로 통신하기 때문에 리턴하는 값을 직접 보내야 한다.
     }
 
-    //글 수정 폼으로 이동
-    @RequestMapping("/modifyForm")
-    public String modifyForm(@RequestParam(value = "boardNo")String boardNo, Model model) throws Exception{
-        //웹문서에서는 데이터를 문자열로 보내기 때문에 int형으로 형변환을 해줘야 함
-        int bno = Integer.parseInt(boardNo); //String을 int형으로 형변환
-        model.addAttribute("board", boardServiceImpl.read(bno));
-        return "/board/modifyForm";
-    }
-
-    //글 수정 요청 처리
+    //사원 정보 수정
     @RequestMapping(value = "/modify", method = RequestMethod.POST)
-    public String modifyPost(@ModelAttribute BoardVO boardVO, RedirectAttributes redirectAttributes) throws Exception{
+    @ResponseBody
+    public void modifyPost(@ModelAttribute BoardVO boardVO) throws Exception{
+        logger.info("modify Controller : "+ boardVO.toString());
         boardServiceImpl.update(boardVO);
-        redirectAttributes.addFlashAttribute("msg","modifySuccess");
-        return "redirect:/";
     }
 
-    //글 삭제 요청 처리
+    //사원 정보 삭제
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
-    public String deletePost(@RequestParam("boardNo") int bno, RedirectAttributes redirectAttributes) throws Exception{
+    @ResponseBody
+    public void deletePost(@RequestParam("boardNo") String boardNo)throws Exception{
+        logger.info("delete Controller :"+ boardNo);
+        int bno = Integer.parseInt(boardNo);
         boardServiceImpl.delete(bno);
-        redirectAttributes.addFlashAttribute("msg","deleteSuccess");
-        return "redirect:/";
     }
 
     //아이디 중복 체크

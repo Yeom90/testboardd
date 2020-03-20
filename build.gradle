@@ -78,6 +78,7 @@ dependencies {
     providedCompile 'javax.servlet:javax.servlet-api:4.0.1'
     providedCompile 'javax.servlet.jsp:jsp-api:2.2'
     implementation 'net.jcip:jcip-annotations:1.0'
+    implementation 'junit:junit:4.12'
 
 }
 

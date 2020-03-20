@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import test.board.dao.BoardDAOImpl;
+import test.board.paging.PageMaker;
+import test.board.paging.PageTest;
 import test.board.vo.BoardVO;
 
 import javax.inject.Inject;
@@ -24,7 +26,7 @@ public class BoardServiceImpl implements BoardService {
 
     //사원정보 작성
     public void create(BoardVO vo) throws Exception{
-        logger.info("Service: " + vo.toString()); //vo에 어떤데이터가 담겨오는지 로그 찍기
+        logger.info("create Service: " + vo.toString()); //vo에 어떤데이터가 담겨오는지 로그 찍기
         boardDAOImpl.create(vo);
     }
 
@@ -35,6 +37,7 @@ public class BoardServiceImpl implements BoardService {
 
     //사원정보 수정
     public void update(BoardVO vo) throws Exception{
+        logger.info("update Service: "+vo.toString());
         boardDAOImpl.update(vo);
     }
 
@@ -44,8 +47,8 @@ public class BoardServiceImpl implements BoardService {
     }
 
     //사원 목록
-    public List<BoardVO> getListAll() throws Exception{
-        return boardDAOImpl.getListAll();
+    public List<BoardVO> getListAll(PageTest pageTest) throws Exception{
+        return boardDAOImpl.getListAll(pageTest);
     }
 
     //아이디 체크
@@ -56,6 +59,11 @@ public class BoardServiceImpl implements BoardService {
     //내선번호 체크
     public int checkInterphone(String interphone) throws Exception{
         return boardDAOImpl.checkInterphone(interphone);
+    }
+
+    //총 게시물 개수
+    public int listAllCnt() throws Exception{
+        return boardDAOImpl.listAllCnt();
     }
 
 }

@@ -91,7 +91,7 @@
                     <!-- 검색박스 시작  search start -->
                     <div class="boxs">
                         <div class="w10 fl">
-                            <span style="font-weight: 600;"> *총 <span class="point_co">14</span>건</span>
+                            <span style="font-weight: 600;"> *총 <span class="point_co">${listAllCnt}</span>건</span>
                         </div>
                         <div class="fr he20 w90">
 			                <span class="btn_findnew fr">
@@ -147,7 +147,6 @@
                                     <c:forEach items="${board}" var="board">
                                         <tr>
                                             <td>${board.bno}</td>
-                                            <th><a href='/read?boardNo=${board.bno}'>${board.empId}</a></th>
                                             <th><a href='#' onclick="openEmpModifyModal(${board.bno})">${board.empId}</a></th>
                                             <th>${board.empName}</th>
                                             <th>${board.interphone}</th>
@@ -167,32 +166,42 @@
                                 <!-- 테이블 끝 -->
 
                                 <!-- 페이징 시작-->
-                                <div id="pwary">
-                                    <div class="pwar">
-                                        <div id="pagingNew">
-                                            <a href="#" class="numPrev_a">
-                                                <span class="flaticon2-fast-back" style="font-size: 0.6rem;"></span>
-                                            </a>
-                                            <a href="#" class="numPrev">
-                                                <span class="flaticon2-back" style="font-size: 0.6rem;"></span>
-                                            </a>
-                                            <span class="sel">1</span>
-                                            <a href="#" class="numBox">2</a>
-                                            <a href="#" class="numBox">3</a>
-                                            <a href="#" class="numBox">4</a>
-                                            <a href="#" class="numBox">5</a>
-                                            <a href="#" class="numBox">6</a>
-                                            <a href="#" class="numBox">7</a>
-                                            <a href="#" class="numBox">8</a>
-                                            <a href="#" class="numBox">9</a>
-                                            <a href="#" class="numBox">10</a>
-                                            <a href="#" class="numNext">
-                                                <span class="flaticon2-next" style="font-size: 0.6rem;"></span></a>
-                                            <a href="#" class="numNext_2">
-                                                <span class="flaticon2-fast-next" style="font-size: 0.6rem;"></span>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="kt-datatable__pager kt-datatable--paging-loaded">
+                                    <ul class="kt-datatable__pager-nav" style="text-align:center;">
+
+                                        <!-- jstl 코어 태그 -->
+                                        <!-- c:if test="조건 판별식"
+                                            var="변수명"
+                                            scope="변수 공유 범위"-->
+                                        <c:if test="${PageMaker.prev}">
+                                            <li>
+                                                <a title="Previous" id="prevBtn"
+                                                   class="kt-datatable__pager-link kt-datatable__pager-link--prev kt-datatable__pager-link--prev"
+                                                   data-page="${PageMaker.curPage-1}" href="${PageMaker.curPage-1});">
+                                                    <i class="flaticon2-back"></i>
+                                                </a>
+                                            </li>
+                                        </c:if>
+                                        <c:forEach begin="${PageMaker.startPage}"
+                                                   end="${PageMaker.endPage}" var="page">
+                                            <li>
+                                                <a class="kt-datatable__pager-link kt-datatable__pager-link-number"
+                                                   id="page${page}"
+                                                   data-page="${page}" title="${page}"
+                                                   href="(${page});">${page}</a> <%-- addclass, hasclass, removeclass,
+                                                                   kt-datatable__pager-link--active--%>
+                                            </li>
+                                        </c:forEach>
+                                        <c:if test="${PageMaker.next}">
+                                            <li>
+                                                <a title="Next" id="nextBtn"
+                                                   class="kt-datatable__pager-link kt-datatable__pager-link--next"
+                                                   data-page="${PageMaker.curPage+1}" href="(${PageMaker.curPage+1});">
+                                                    <i class="flaticon2-next"></i>
+                                                </a>
+                                            </li>
+                                        </c:if>
+                                    </ul>
                                 </div>
                                 <!-- 페이징 끝 -->
                             </div>
@@ -201,11 +210,11 @@
                 </div>
             </div>
             <!-- 사원 등록 모달 팝업 시작 -->
-            <jsp:include page="../include/test_empRegForm.jsp"/>
+            <%@include file="../include/test_empRegForm.jsp"%>
             <!-- 사원 등록 모달 팝업 끝 -->
 
             <!-- 사원 정보 모달 팝업 시작 -->
-            <%@include file="test_read.jsp"%>
+            <%@include file="../include/test_empModForm.jsp"%>
             <!-- 사원 정보 모달 팝업 끝 -->
         </div>
     </div>
@@ -216,10 +225,10 @@
 <!-- test_plugin_js.jsp -->
 <%@include file="/WEB-INF/view/include/test_plugin_js.jsp" %>
 
-
 <!-- page script -->
 <script>
     //Modal 관련 이벤트 처리
+    //사원 정보 저장 Modal 처리
     $(function () {
         $("#registerBtn").click(function () {
             $("#empRegModal").modal();
@@ -227,22 +236,25 @@
 
         //Modal창에서 Submit 이벤트 처리 (저장)
         $("#modalSubmit").click(function () {
-            let test_data = $("#empRegForm").serialize();
-            console.log(test_data);
+            let reg_data = $("#empRegForm").serialize();
+            console.log("reg_data : "+reg_data);
 
             //summit 클릭시 이벤트 처리 (사원 저장 버튼)
             $.ajax({
                 url: '/write',
                 type: 'POST',
                 //contentType : "application/x-www-form-urlencoded; charset=UTF-8",
-                data: test_data,
+                data: reg_data,
                 //dataType : "json",
                 success: function (result) {
                     alert("사원 등록 성공");
                     $("#empRegModal").modal('toggle'); // .modal('toggle') : modal이 켜져있을때 호출하면 꺼지고, 꺼졌을때 호출하면 켜짐(==스위치)
                 },
                 error: function (xhr, status) {
-                    console.log(xhr, status);
+                    console.log("error xhr: "+xhr, "error status: "+status);
+                },
+                complete: function () {
+                    location.reload();
                 }
             });
         });
@@ -257,22 +269,72 @@
             //contentType : "application/x-www-form-urlencoded; charset=UTF-8",
             data: {boardNo : boardNo},
             success: function (result) {
-                alert("사원 조회 성공");
-                console.log("result : "+result.empId);
                 $("#empModifyModal").modal();
-                transferInfoToModal(result);
+                setInfoToModal(result);
             },
             error: function (xhr, status) {
-                console.log(xhr, status);
+                console.log("error xhr: "+xhr, "error status: "+status);
             }
         });
     };
 
-    function transferInfoToModal(empInfo) {
-        $('#empId').val(empInfo.empId);
+    //사원정보 폼에 넣는 함수
+    function setInfoToModal(empInfo) {
+        $('#empModId').val(empInfo.empId);
+        $('#empModName').val(empInfo.empName);
+        $('#companyModName').val(empInfo.companyName);
+        $('#teamModName').val(empInfo.teamName);
+        $('#interphoneMod').val(empInfo.interphone);
+        $('#isModWorking').val(empInfo.isWorking);
+        $('#taskMod').val(empInfo.task);
+        $('#athorityMod').val(empInfo.athority);
+        $('#inModDate').val(empInfo.inDate);
+        $('#outModDate').val(empInfo.outDate);
+        $('#extraModInfo').val(empInfo.extraInfo);
+        $('input[name=bno]').val(empInfo.bno); // name 값으로 element 선택
     }
 
+    //사원 정보 수정 요청 처리
+    $('#modalModSubmit').click(function () {
+        let mod_data = $('#empModifyForm').serialize();
+        console.log("mod_data : "+mod_data);
+        $.ajax({
+            url: '/modify',
+            type: 'POST',
+            data: mod_data,
+            success: function (result) {
+                alert("사원 정보 수정 성공");
+                $("#empModifyModal").modal('toggle'); // .modal('toggle') : modal이 켜져있을때 호출하면 꺼지고, 꺼졌을때 호출하면 켜짐(==스위치)
+            },
+            error: function (xhr, status) {
+                console.log("error xhr: " + xhr, "error status: " + status);
+            },
+            complete: function () {
+                location.reload();
+            }
+        });
+    })
 
+    //사원 정보 삭제 요청 처리
+    $('#modalDeleteSubmit').click(function () {
+        let boardNo = $('input[name=bno]').val();
+        console.log("Delete bno: "+boardNo);
+        $.ajax({
+            url: '/delete',
+            type: 'POST',
+            data: {boardNo : boardNo},
+            success: function () {
+                alert("사원 정보 삭제 성공");
+                $("#empModifyModal").modal('toggle');
+            },
+            error: function (xhr, status) {
+                console.log("error xhr: "+xhr, "error status: "+status);
+            },
+            complete: function () {
+                location.reload();
+            }
+        });
+    })
 
 </script>
 </body>

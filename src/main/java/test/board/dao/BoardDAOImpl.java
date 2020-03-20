@@ -4,6 +4,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
+import test.board.paging.PageMaker;
+import test.board.paging.PageTest;
 import test.board.vo.BoardVO;
 
 import javax.inject.Inject;
@@ -33,7 +35,7 @@ public class BoardDAOImpl implements BoardDAO{
 
 
     public void create(BoardVO vo) throws Exception{
-        logger.info("DAO: " + vo.toString()); //vo에 어떤데이터가 담겨오는지 로그 찍기
+        logger.info("create DAO: " + vo.toString()); //vo에 어떤데이터가 담겨오는지 로그 찍기
         //모든 쿼리는 namespace.sqlId 의 구조로 구성된다.
         sqlST.insert(NAMESPACE + ".create", vo);
     }
@@ -45,6 +47,7 @@ public class BoardDAOImpl implements BoardDAO{
     }
 
     public void update(BoardVO vo) throws  Exception{
+        logger.info("update DAO: "+vo.toString());
         sqlST.update(NAMESPACE + ".update", vo);
     }
 
@@ -52,9 +55,9 @@ public class BoardDAOImpl implements BoardDAO{
         sqlST.delete(NAMESPACE + ".delete", bno);
     }
 
-    public List<BoardVO> getListAll() throws Exception{
+    public List<BoardVO> getListAll(PageTest pageTest) throws Exception{
         //List<E> selectList(String statement)가 원형이며 boardMapper.listAll 을 실행하여 BoardVO 객체들로 구성된 List 를 반환한다.
-        return sqlST.selectList(NAMESPACE + ".listAll");
+        return sqlST.selectList(NAMESPACE + ".listAll", pageTest);
     }
 
     public int checkId(String emp_id) throws Exception {
@@ -63,5 +66,9 @@ public class BoardDAOImpl implements BoardDAO{
 
     public int checkInterphone(String interphone) throws Exception{
         return sqlST.selectOne(NAMESPACE + ".checkInterphone", interphone);
+    }
+
+    public int listAllCnt()throws Exception{
+        return sqlST.selectOne(NAMESPACE + ".listAllCnt");
     }
 }

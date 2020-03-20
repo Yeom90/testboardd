@@ -51,7 +51,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span id="empNameChecked" style="color: red; text-align: right">""</span>
+                                        <span name="empNameChecked" style="color: red; text-align: right">""</span>
                                     </div>
                                     <!-- 사원명  끝 -->
                                     <!-- 부서코드 셀렉트 박스 시작  -->
@@ -83,8 +83,8 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span id="companyNameChecked" style="color: red; text-align: right">""</span>
-                                        <span id="teamNameChecked" style="color: red; text-align: right">""</span>
+                                        <span name="companyNameChecked" style="color: red; text-align: right">""</span>
+                                        <span name="teamNameChecked" style="color: red; text-align: right">""</span>
                                     </div>
                                     <!-- 부서코드 셀렉트 박스 끝 -->
                                     <!-- 내선번호 중복검색 시작 -->
@@ -96,14 +96,14 @@
                                                 <input id="interphone" type="text" name="interphone" class="form-control_1"
                                                        placeholder="숫자 4자리만 입력해주세요">
                                                 <div class="input-group-append">
-                                                    <button id="checkInterphoneBtn" class="btn btn-primary_777" type="button">중복검색
+                                                    <button name="checkInterphoneBtn" class="btn btn-primary_777" type="button">중복검색
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <span id="interphoneChecked" style="color: red; text-align: right">""</span>
+                                        <span name="interphoneChecked" style="color: red; text-align: right">""</span>
                                     </div>
                                     <!-- 내선번호 중복검색 끝 -->
                                     <!-- 재직여부 시작 -->
@@ -122,7 +122,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span id="isWorkingChecked" style="color: red; text-align: right">""</span>
+                                        <span name="isWorkingChecked" style="color: red; text-align: right">""</span>
                                     </div>
                                     <!-- 재직여부 끝 -->
                                     <!-- 업무 시작 -->
@@ -141,7 +141,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span id="taskChecked" style="color: red; text-align: right">""</span>
+                                        <span name="taskChecked" style="color: red; text-align: right">""</span>
                                     </div>
                                     <!-- 업무 끝 -->
                                     <!-- 권한 시작 -->
@@ -163,7 +163,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span id="athorityChecked" style="color: red; text-align: right">""</span>
+                                        <span name="athorityChecked" style="color: red; text-align: right">""</span>
                                     </div>
                                     <!-- 권한 끝 -->
                                     <!-- 입사일자 시작 -->
@@ -184,7 +184,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span id="inDateChecked" style="color: red; text-align: right">""</span>
+                                        <span name="inDateChecked" style="color: red; text-align: right">""</span>
                                     </div>
                                     <!-- 입사일자 끝 -->
                                     <!-- 퇴사일자 시작 -->
@@ -204,7 +204,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span id="outDateChecked" style="color: red; text-align: right">""</span>
+                                        <span name="outDateChecked" style="color: red; text-align: right">""</span>
                                     </div>
                                     <!-- 퇴사일자 끝 -->
                                     <!-- 비고 시작 -->
