@@ -1,7 +1,6 @@
 package test.board.dao;
 
-import test.board.paging.PageMaker;
-import test.board.paging.PageTest;
+import test.board.paging.Criteria;
 import test.board.vo.BoardVO;
 
 import java.util.List;
@@ -17,7 +16,7 @@ public interface BoardDAO {
 
     public void delete (int bno) throws Exception;
 
-    public List<BoardVO> getListAll(PageTest pageTest) throws Exception;
+    public List<BoardVO> getListAll(Criteria criteria) throws Exception;
 
     public int checkId(String emp_id) throws Exception;
 

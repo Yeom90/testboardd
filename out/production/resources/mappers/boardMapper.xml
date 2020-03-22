@@ -90,7 +90,7 @@
             regDate
         FROM tb_emp_manage
         ORDER BY bno DESC
-        LIMIT #{curPage}, #{perPage}
+        LIMIT #{pageStart}, #{perPageNum}
     </select>
 
     <!-- 사원 아이디 중복체크 -->
@@ -105,6 +105,6 @@
 
     <!-- 총 사원정보 개수 -->
     <select id="listAllCnt" resultType="Integer">
-        select count(*) from tb_emp_manage
+        select count(bno) from tb_emp_manage
     </select>
 </mapper>
