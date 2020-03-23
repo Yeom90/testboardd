@@ -7,67 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="218bd464-c8e8-4fe6-bbe9-d4895d103d40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/testboardd_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/testboardd_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/controller/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/dao/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/dao/BoardDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/dao/BoardDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/dao/BoardDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/paging/PageMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/paging/PageMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/service/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/service/BoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/service/BoardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/mappers/boardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/controller/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/dao/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/dao/BoardDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/dao/BoardDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/dao/BoardDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/paging/PageMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/paging/PageMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/service/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/service/BoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/service/BoardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/view/board/test_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/view/board/test_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/testboardd-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/testboardd-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mappers/boardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_cdn.datatables.net_1.10.20_css_dataTables.bootstrap4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_cdn.datatables.net_1.10.20_js_dataTables.bootstrap4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_cdn.datatables.net_1.10.20_js_jquery.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_code.jquery.com_jquery-3.4.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_stackpath.bootstrapcdn.com_bootstrap_4.3.1_js_bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/mappers/boardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/board/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/board/modifyForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/board/writeForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/include/plugIn.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/controller/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/dao/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/dao/BoardDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/dao/BoardDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/dao/BoardDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/paging/PageMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/paging/PageMaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/service/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/service/BoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/service/BoardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/view/board/test_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/view/board/test_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/testboardd-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/testboardd-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mappers/boardMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/dao/BoardDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/dao/BoardDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/dao/BoardDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/paging/PageMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/paging/PageMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/paging/PageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/paging/Criteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/service/BoardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/boardMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/board/test_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/board/test_list.jsp" afterDir="false" />
     </list>
@@ -205,6 +157,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.22" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.22" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="testboardd:war exploded">
@@ -290,6 +243,29 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.14069264" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -316,6 +292,8 @@
       <workItem from="1584581651477" duration="27614000" />
       <workItem from="1584614239036" duration="4000" />
       <workItem from="1584662997048" duration="31194000" />
+      <workItem from="1584925060667" duration="9000" />
+      <workItem from="1584925086132" duration="7898000" />
     </task>
     <servers />
   </component>
@@ -331,6 +309,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584345861471" />
+    <state x="552" y="179" key="#TODO" timestamp="1584931689583">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#TODO/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931689583" />
     <state x="552" y="179" key="#Template_Data_Languages" timestamp="1584404803909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -344,10 +326,10 @@
     </state>
     <state x="690" y="300" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584504918024" />
     <state x="2610" y="335" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584087323106" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584592741971">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584939887984">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584592741971" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584939887984" />
     <state x="2334" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086057506" />
     <state x="716" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584597574930">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -391,111 +373,115 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="839" y="286" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584433377129" />
-    <state x="391" y="223" key="FileChooserDialogImpl" timestamp="1584673025789">
+    <state x="391" y="223" key="FileChooserDialogImpl" timestamp="1584925096141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="391" y="223" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584673025789" />
+    <state x="391" y="223" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584925096141" />
     <state x="2311" y="249" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086028545" />
-    <state width="1620" height="354" key="GridCell.Tab.0.bottom" timestamp="1584699462856">
+    <state width="1587" height="282" key="GridCell.Tab.0.bottom" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462856" />
+    <state width="1587" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.0.center" timestamp="1584699462856">
+    <state width="1587" height="282" key="GridCell.Tab.0.center" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462856" />
+    <state width="1587" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.0.left" timestamp="1584699462856">
+    <state width="1587" height="282" key="GridCell.Tab.0.left" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462856" />
+    <state width="1587" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.0.right" timestamp="1584699462856">
+    <state width="1587" height="282" key="GridCell.Tab.0.right" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462856" />
+    <state width="1587" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.1.bottom" timestamp="1584699462857">
+    <state width="1587" height="282" key="GridCell.Tab.1.bottom" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462857" />
+    <state width="1587" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.1.center" timestamp="1584699462857">
+    <state width="1587" height="282" key="GridCell.Tab.1.center" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462857" />
+    <state width="1587" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.1.left" timestamp="1584699462857">
+    <state width="1587" height="282" key="GridCell.Tab.1.left" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462857" />
+    <state width="1587" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.1.right" timestamp="1584699462857">
+    <state width="1587" height="282" key="GridCell.Tab.1.right" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462857" />
+    <state width="1587" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.2.bottom" timestamp="1584699462857">
+    <state width="1587" height="282" key="GridCell.Tab.2.bottom" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462857" />
+    <state width="1587" height="282" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410150" />
-    <state width="1620" height="354" key="GridCell.Tab.2.center" timestamp="1584699462857">
+    <state width="1587" height="282" key="GridCell.Tab.2.center" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462857" />
+    <state width="1587" height="282" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.2.left" timestamp="1584699462857">
+    <state width="1587" height="282" key="GridCell.Tab.2.left" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462857" />
+    <state width="1587" height="282" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="354" key="GridCell.Tab.2.right" timestamp="1584699462857">
+    <state width="1587" height="282" key="GridCell.Tab.2.right" timestamp="1584931656247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="354" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584699462857" />
+    <state width="1587" height="282" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584931656247" />
     <state width="1620" height="273" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584094410149" />
-    <state width="1620" height="311" key="GridCell.Tab.5.bottom" timestamp="1584581785680">
+    <state width="1293" height="282" key="GridCell.Tab.5.bottom" timestamp="1584926890909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="311" key="GridCell.Tab.5.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584581785680" />
+    <state width="1293" height="282" key="GridCell.Tab.5.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584926890909" />
     <state width="1550" height="394" key="GridCell.Tab.5.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086132140" />
-    <state width="1620" height="311" key="GridCell.Tab.5.center" timestamp="1584581785680">
+    <state width="1293" height="282" key="GridCell.Tab.5.center" timestamp="1584926890909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="311" key="GridCell.Tab.5.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584581785680" />
+    <state width="1293" height="282" key="GridCell.Tab.5.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584926890909" />
     <state width="1550" height="394" key="GridCell.Tab.5.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086132140" />
-    <state width="1620" height="311" key="GridCell.Tab.5.left" timestamp="1584581785680">
+    <state width="1293" height="282" key="GridCell.Tab.5.left" timestamp="1584926890909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="311" key="GridCell.Tab.5.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584581785680" />
+    <state width="1293" height="282" key="GridCell.Tab.5.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584926890909" />
     <state width="1550" height="394" key="GridCell.Tab.5.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086132140" />
-    <state width="1620" height="311" key="GridCell.Tab.5.right" timestamp="1584581785680">
+    <state width="1293" height="282" key="GridCell.Tab.5.right" timestamp="1584926890909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1620" height="311" key="GridCell.Tab.5.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584581785680" />
+    <state width="1293" height="282" key="GridCell.Tab.5.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584926890909" />
     <state width="1550" height="394" key="GridCell.Tab.5.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086132140" />
-    <state width="1550" height="394" key="GridCell.Tab.6.bottom" timestamp="1584086125657">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state width="1293" height="282" key="GridCell.Tab.6.bottom" timestamp="1584926891473">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1293" height="282" key="GridCell.Tab.6.bottom/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584926891473" />
     <state width="1550" height="394" key="GridCell.Tab.6.bottom/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086125657" />
-    <state width="1550" height="394" key="GridCell.Tab.6.center" timestamp="1584086125656">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state width="1293" height="282" key="GridCell.Tab.6.center" timestamp="1584926891473">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1293" height="282" key="GridCell.Tab.6.center/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584926891473" />
     <state width="1550" height="394" key="GridCell.Tab.6.center/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086125656" />
-    <state width="1550" height="394" key="GridCell.Tab.6.left" timestamp="1584086125656">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state width="1293" height="282" key="GridCell.Tab.6.left" timestamp="1584926891473">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1293" height="282" key="GridCell.Tab.6.left/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584926891473" />
     <state width="1550" height="394" key="GridCell.Tab.6.left/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086125656" />
-    <state width="1550" height="394" key="GridCell.Tab.6.right" timestamp="1584086125657">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state width="1293" height="282" key="GridCell.Tab.6.right" timestamp="1584926891473">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1293" height="282" key="GridCell.Tab.6.right/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584926891473" />
     <state width="1550" height="394" key="GridCell.Tab.6.right/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584086125657" />
-    <state x="2011" y="83" key="SettingsEditor" timestamp="1584663088734">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state x="589" y="106" key="SettingsEditor" timestamp="1584930619841">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="589" y="106" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584592755297" />
+    <state x="589" y="106" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584930619841" />
     <state x="2011" y="83" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584663088734" />
     <state x="530" y="165" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1584581629271">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -538,5 +524,5 @@
     </state>
     <state x="640" y="203" key="spring file set editor/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584083632383" />
     <state x="2560" y="226" key="spring file set editor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584085819568" />
-	</component>
+  </component>
 </project>

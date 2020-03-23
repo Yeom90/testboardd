@@ -18,9 +18,9 @@
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.mariadb.jdbc.Driver"/>
         <property name="url"
-                  value="jdbc:mariadb://bk4507.iptime.org:3306/home?useUnicode=yes&amp;characterEncoding=UTF-8"/> <!-- DB에 삽입하는 데이터가 한글이기 때문에 Unicode를 사용하고 UTF-8로 인코딩한다. -->
-        <property name="username" value="yeom"/>
-        <property name="password" value="yeom1234"/>
+                  value="jdbc:mariadb://10.10.10.109:3306/seunghunyeom?useUnicode=yes&amp;characterEncoding=UTF-8"/> <!-- DB에 삽입하는 데이터가 한글이기 때문에 Unicode를 사용하고 UTF-8로 인코딩한다. -->
+        <property name="username" value="seunghunyeom"/>
+        <property name="password" value="YEOM220!"/>
     </bean>
 
     <!-- 마이바티스는 SqlSession 생성을 위해 SqlSessionFactory를 사용,
