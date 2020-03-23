@@ -6,25 +6,75 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e72398fd-a2a7-4eb4-93a2-4aebb48a9635" name="Default Changelist" comment="" />
+    <list default="true" id="218bd464-c8e8-4fe6-bbe9-d4895d103d40" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/testboardd_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/testboardd_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/dao/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/dao/BoardDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/dao/BoardDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/dao/BoardDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/paging/PageMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/paging/PageMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/test/board/service/BoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/test/board/service/BoardServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/mappers/boardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/dao/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/dao/BoardDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/dao/BoardDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/dao/BoardDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/paging/PageMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/paging/PageMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/service/BoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/classes/test/board/service/BoardServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/view/board/test_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/testboardd-1.0-SNAPSHOT.war/WEB-INF/view/board/test_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/testboardd-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/testboardd-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mappers/boardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_cdn.datatables.net_1.10.20_css_dataTables.bootstrap4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_cdn.datatables.net_1.10.20_js_dataTables.bootstrap4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_cdn.datatables.net_1.10.20_js_jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_code.jquery.com_jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/http_stackpath.bootstrapcdn.com_bootstrap_4.3.1_js_bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/mappers/boardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/board/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/board/modifyForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/board/writeForm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/src/main/webapp/WEB-INF/view/include/plugIn.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/dao/BoardDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/dao/BoardDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/dao/BoardDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/dao/BoardDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/paging/PageMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/paging/PageMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/service/BoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/classes/test/board/service/BoardServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/view/board/test_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/WEB-INF/view/board/test_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/testboardd-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/testboardd_war_exploded/testboardd-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/mappers/boardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/dao/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/dao/BoardDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/dao/BoardDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/paging/PageMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/paging/PageMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/paging/PageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/paging/Criteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/board/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/board/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/boardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/board/test_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/board/test_list.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -52,18 +102,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="testboardd" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="testboardd" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="testboardd" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -72,41 +110,6 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="testboardd" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build setup" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="testboardd" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="documentation" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="testboardd" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="testboardd" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="testboardd" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="verification" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="testboardd" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -114,71 +117,55 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="testboardd" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="spring-beans.schema" />
-        <option value="Interface" />
-        <option value="Jsp File" />
-        <option value="JavaScript File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectId" id="1Z40oCWuSkkAY3eBtZMEodNuTsi" />
+  <component name="ProjectId" id="1ZUHtubV79vVhnJM4KkW6AeQ5A5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../crudboardByArmi" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp\WEB-INF\view\include" />
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp\WEB-INF\view\board" />
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp" />
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp\resources" />
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp\assets\vendors\general\jquery\dist" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="test.board.controller" />
-      <recent name="test.board.dao" />
-      <recent name="test.board.service" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp\WEB-INF\view\include" />
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp" />
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp\resources" />
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp\resources\modal" />
-      <recent name="C:\web\IdeaProjects\testboardd\src\main\webapp\WEB-INF\view\board" />
-    </key>
+    <property name="project.structure.side.proportion" value="0.3707165" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.22">
+    <configuration name="testboardd [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="testboardd [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -218,7 +205,6 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.22" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.22" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="update-resources" />
       <deployment>
         <artifact name="testboardd:war exploded">
@@ -228,7 +214,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_testboardd_3" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_testboardd_5" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -236,7 +222,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="61697" />
+        <option name="DEBUG_PORT" value="49718" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -291,50 +277,26 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.testboardd [build]" />
       <item itemvalue="Gradle.testboardd [clean]" />
+      <item itemvalue="Gradle.testboardd [build]" />
+      <item itemvalue="Gradle.testboardd [buildDependents]" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.22" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.testboardd [buildDependents]" />
         <item itemvalue="Gradle.testboardd [build]" />
         <item itemvalue="Gradle.testboardd [clean]" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.122835495" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SpringBeansView">
-    <option name="beanDetailsProportion" value="0.3" />
-  </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\kbsjob\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e72398fd-a2a7-4eb4-93a2-4aebb48a9635" name="Default Changelist" comment="" />
-      <created>1584083231835</created>
+      <changelist id="218bd464-c8e8-4fe6-bbe9-d4895d103d40" name="Default Changelist" comment="" />
+      <created>1584886970057</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584083231835</updated>
@@ -359,11 +321,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="834" y="150" key="#Inspections" timestamp="1584407700855">
@@ -581,5 +538,5 @@
     </state>
     <state x="640" y="203" key="spring file set editor/0.0.1920.1040/1920.0.1920.1160@0.0.1920.1040" timestamp="1584083632383" />
     <state x="2560" y="226" key="spring file set editor/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1584085819568" />
-  </component>
+	</component>
 </project>

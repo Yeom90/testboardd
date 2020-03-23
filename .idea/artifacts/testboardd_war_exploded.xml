@@ -9,6 +9,7 @@
           <element id="library" level="application" name="dataTables.bootstrap4" />
           <element id="library" level="application" name="jquery-3.4.1" />
           <element id="library" level="application" name="jquery.dataTables" />
+          <element id="module-output" name="testboardd" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.8" />
@@ -53,7 +54,6 @@
       </element>
       <element id="javaee-facet-resources" facet="testboardd.main/web/Web" />
       <element id="javaee-facet-resources" facet="testboardd.main/web/Web Gradle : testboardd-1.0-SNAPSHOT.war" />
-      <element id="javaee-facet-resources" facet="testboardd/web/Web" />
       <element id="artifact" artifact-name="Gradle : testboardd-1.0-SNAPSHOT.war (exploded)" />
       <element id="artifact" artifact-name="Gradle : testboardd-1.0-SNAPSHOT.war" />
     </root>

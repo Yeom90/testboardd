@@ -4,8 +4,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
-import test.board.paging.PageMaker;
-import test.board.paging.PageTest;
+import test.board.paging.Criteria;
 import test.board.vo.BoardVO;
 
 import javax.inject.Inject;
@@ -55,9 +54,9 @@ public class BoardDAOImpl implements BoardDAO{
         sqlST.delete(NAMESPACE + ".delete", bno);
     }
 
-    public List<BoardVO> getListAll(PageTest pageTest) throws Exception{
+    public List<BoardVO> getListAll(Criteria criteria) throws Exception{
         //List<E> selectList(String statement)가 원형이며 boardMapper.listAll 을 실행하여 BoardVO 객체들로 구성된 List 를 반환한다.
-        return sqlST.selectList(NAMESPACE + ".listAll", pageTest);
+        return sqlST.selectList(NAMESPACE + ".listAll", criteria);
     }
 
     public int checkId(String emp_id) throws Exception {

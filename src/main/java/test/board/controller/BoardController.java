@@ -1,12 +1,12 @@
 package test.board.controller;
 
-import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import test.board.paging.PageTest;
+import test.board.paging.Criteria;
+import test.board.paging.PageMaker;
 import test.board.service.BoardServiceImpl;
 import test.board.vo.BoardVO;
 
@@ -30,35 +30,19 @@ public class BoardController {
 
     //글 목록
     @RequestMapping("/")
-    public ModelAndView listPost(@RequestParam(defaultValue="1") int curPage) throws Exception{
-
-        //페이징 할 인스턴스 만들기
-        PageTest pageTest = new PageTest();
-
-        //글 목록 가져오기
-        List<BoardVO> list = boardServiceImpl.getListAll(pageTest);
+    public ModelAndView listPost(Criteria criteria) throws Exception{
+        logger.info("criteria: "+ criteria);
+        int totalCount = boardServiceImpl.listAllCnt(); //전체게시글 개수 리턴
+        logger.info("listAllCnt: "+totalCount);
+        PageMaker pageMaker = new PageMaker();
+        pageMaker.setCriteria(criteria); //뷰에서 받아온 페이지 번호를 넣어줌
+        pageMaker.setTotalCount(totalCount); //하단 목록 번호 계산을 위한 전체 게시글 개수 저장
 
         ModelAndView mav = new ModelAndView("/board/test_list");
-        mav.addObject("board", list);
-        mav.addObject("pageMaker", list);
-        mav.addObject("listAllCnt", boardServiceImpl.listAllCnt());
-        logger.info("listAllCnt: " + String.valueOf(boardServiceImpl.listAllCnt()));
+        mav.addObject("board", boardServiceImpl.getListAll(criteria));//게시글 가져오기
+        mav.addObject("pageMaker", pageMaker);//하단 페이지 번호 만든 인스턴스 뷰로 보내기
         return mav;
     }
-
-    @Test
-    public void testListPaging() throws Exception{
-        PageTest pageTest = new PageTest();
-        pageTest.setPage(3);
-        pageTest.setPerPageNum(10);
-
-        List<BoardVO> empList = boardServiceImpl.getListAll(pageTest);
-
-        for(BoardVO boardVO : empList){
-            logger.info(boardVO.getEmpId() + ":" + boardVO.getEmpName());
-        }
-    }
-
 
     //글 작성 요청 처리
     @RequestMapping(value = "/write", method = RequestMethod.POST)

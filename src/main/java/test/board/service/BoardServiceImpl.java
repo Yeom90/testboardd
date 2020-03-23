@@ -4,8 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import test.board.dao.BoardDAOImpl;
-import test.board.paging.PageMaker;
-import test.board.paging.PageTest;
+import test.board.paging.Criteria;
 import test.board.vo.BoardVO;
 
 import javax.inject.Inject;
@@ -47,8 +46,8 @@ public class BoardServiceImpl implements BoardService {
     }
 
     //사원 목록
-    public List<BoardVO> getListAll(PageTest pageTest) throws Exception{
-        return boardDAOImpl.getListAll(pageTest);
+    public List<BoardVO> getListAll(Criteria criteria) throws Exception{
+        return boardDAOImpl.getListAll(criteria);
     }
 
     //아이디 체크

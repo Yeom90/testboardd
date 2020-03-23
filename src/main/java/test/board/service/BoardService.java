@@ -1,7 +1,6 @@
 package test.board.service;
 
-import test.board.paging.PageMaker;
-import test.board.paging.PageTest;
+import test.board.paging.Criteria;
 import test.board.vo.BoardVO;
 
 import java.util.List;
@@ -19,7 +18,7 @@ public interface BoardService { // business logic 처리, DAO 로 DB 접근, DTO
 
     public void delete(int bno) throws Exception;
 
-    public List<BoardVO> getListAll(PageTest pageTest) throws Exception;
+    public List<BoardVO> getListAll(Criteria criteria) throws Exception;
 
     public int checkId(String emp_id) throws Exception;
 
