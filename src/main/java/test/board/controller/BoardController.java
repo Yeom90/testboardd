@@ -30,7 +30,7 @@ public class BoardController {
 
     //글 목록
     @RequestMapping("/")
-    public ModelAndView listPost(@RequestBody Criteria criteria) throws Exception{
+    public ModelAndView listPost(@ModelAttribute Criteria criteria) throws Exception{
         logger.info("criteria: "+ criteria);
         int totalCount = boardServiceImpl.listAllCnt(); //전체게시글 개수 리턴
         logger.info("listAllCnt: "+totalCount);

@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import test.board.dao.BoardDAOImpl;
 import test.board.paging.Criteria;
+import test.board.searching.SearchCriteria;
 import test.board.vo.BoardVO;
 
 import javax.inject.Inject;
@@ -63,6 +64,16 @@ public class BoardServiceImpl implements BoardService {
     //총 게시물 개수
     public int listAllCnt() throws Exception{
         return boardDAOImpl.listAllCnt();
+    }
+
+    //검색된 게시글 목록 가져오기
+    public List<BoardVO> listSearch(SearchCriteria searchCriteria) throws Exception{
+        return boardDAOImpl.listSearch(searchCriteria);
+    }
+
+    //검색된 게시글 총 개수 가져오기
+    public int countSearchedList(SearchCriteria searchCriteria)throws Exception{
+        return boardDAOImpl.countSearchedList(searchCriteria);
     }
 
 }

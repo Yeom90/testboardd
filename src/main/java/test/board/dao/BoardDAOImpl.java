@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 import test.board.paging.Criteria;
+import test.board.searching.SearchCriteria;
 import test.board.vo.BoardVO;
 
 import javax.inject.Inject;
@@ -69,5 +70,13 @@ public class BoardDAOImpl implements BoardDAO{
 
     public int listAllCnt()throws Exception{
         return sqlST.selectOne(NAMESPACE + ".listAllCnt");
+    }
+
+    public List<BoardVO> listSearch(SearchCriteria searchCriteria) throws Exception{
+        return sqlST.selectList(NAMESPACE + ".listSearch", searchCriteria);
+    }
+
+    public int countSearchedList(SearchCriteria searchCriteria) throws Exception{
+        return sqlST.selectOne(NAMESPACE + ".countSearchedList", searchCriteria);
     }
 }

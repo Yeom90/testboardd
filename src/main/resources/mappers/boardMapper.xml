@@ -7,7 +7,7 @@
 
     <!-- 사원 정보 등록 -->
     <insert id="create" parameterType="BoardVO">
-        insert into tb_emp_manage (
+        INSERT INTO tb_emp_manage (
             empId,
             empName,
             interphone,
@@ -19,7 +19,7 @@
             outDate,
             extraInfo
         )
-        values(
+        VALUES(
             #{empId},
             #{empName},
             #{interphone},
@@ -35,7 +35,7 @@
 
     <!-- 사원정보 읽기 -->
     <select id="read" resultType="BoardVO">
-        select
+        SELECT
             bno,
             empId,
             empName,
@@ -49,7 +49,7 @@
             register,
             regDate,
             extraInfo
-        from tb_emp_manage where bno = #{bno}
+        FROM tb_emp_manage WHERE bno = #{bno}
     </select>
 
     <!-- 사원정보 수정 -->
@@ -70,7 +70,7 @@
 
     <!-- 사원정보 삭제 -->
     <delete id="delete">
-        delete from tb_emp_manage where bno = #{bno}
+        DELETE FROM tb_emp_manage WHERE bno = #{bno}
     </delete>
 
     <!-- 사원 목록 불러오기 -->
@@ -95,16 +95,68 @@
 
     <!-- 사원 아이디 중복체크 -->
     <select id="checkId" resultType="Integer">
-        select count(empId) from tb_emp_manage where empId = #{emp_id}
+        SELECT COUNT(empId) FROM tb_emp_manage WHERE empId = #{emp_id}
     </select>
 
     <!-- 사원 내선번호 중복체크 -->
     <select id="checkInterphone" resultType="Integer">
-        select count(interphone) from tb_emp_manage where interphone = #{interphone}
+        SELECT COUNT(interphone) FROM tb_emp_manage WHERE interphone = #{interphone}
     </select>
 
     <!-- 총 사원정보 개수 -->
     <select id="listAllCnt" resultType="Integer">
-        select count(bno) from tb_emp_manage
+        SELECT COUNT(bno) FROM tb_emp_manage
     </select>
+
+    <!-- 검색을 위한 동적 쿼리 -->
+    <select id="listSearch" resultType="BoardVO">/*TODO: resultMap 찾아봐*/
+        <![CDATA[
+        SELECT
+            bno,
+            empId,
+            empName,
+            interphone,
+            companyName,
+            athority,
+            isWorking,
+            inDate,
+            outDate,
+            pwdErCnt,
+            register,
+            regDate
+        FROM tb_emp_manage
+        WHERE bno > 0
+        ]]>
+        <include refid="search"/>
+        <![CDATA[
+        ORDER BY bno DESC
+        LIMIT #{pageStart}, #{perPageNum}
+        ]]>
+    </select>
+
+    <!-- 검색된 게시글 수 -->
+    <select id="countSearchedList" resultType="Integer">
+        <![CDATA[
+        SELECT
+            COUNT(bno)
+        FROM tb_emp_manage
+        WHERE bno > 0
+        ]]>
+        <include refid="search"/>
+    </select>
+
+    <!-- include 되는 검색 조건문 -->
+    <sql id="search">
+        <if test="ftSearchType != null">
+            <if test="ftSearchType == 'working'.toString()">
+                AND isWorking LIKE CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="ftSearchType == 'retired'.toString()">
+                AND isWorking LIKE CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="ftSearchType == 'rest'.toString()">
+                AND isWorking LIKE CONCAT('%', #{keyword}, '%')
+            </if>
+        </if>
+    </sql>
 </mapper>
