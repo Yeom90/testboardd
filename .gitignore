@@ -38,6 +38,8 @@ target/
 .idea/
 classes/
 META-INF/
+.gradle/
+out/
 
 # .iml
 local.properties
