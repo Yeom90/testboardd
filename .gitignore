@@ -28,6 +28,9 @@
 # Compiled class file
 *.class
 
+# ignore workspace.xml
+workspace.xml
+
 # ignore all files in the directory #
 build/
 bin/
