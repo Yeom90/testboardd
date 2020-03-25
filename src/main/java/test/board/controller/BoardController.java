@@ -21,12 +21,13 @@ public class BoardController {
 
     private final BoardServiceImpl boardServiceImpl; // BoardService를 주입 하기위한 필드
 
+    //TODO: 명확하게 알지 못하는 클래스는 무조건 API 문서 볼 것
     private final static Logger logger = LoggerFactory.getLogger(BoardController.class); //log4j 사용하기위한 Object 생성
 
-    @Inject // 생성자를 이용하여 무엇을 주입, 무엇을 주입 했는지 보기 좋고 안정성 면에서도 뛰어남
+    @Inject //자바에서 제공하는 javax.inject 패키지에 있는 클래스
     public BoardController(BoardServiceImpl boardServiceImpl) {
         this.boardServiceImpl = boardServiceImpl;
-    }
+    }// 생성자를 이용하여 무엇을 주입, 무엇을 주입 했는지 보기 좋고 안정성 면에서도 뛰어남
 
     //글 목록
     @RequestMapping("/")
