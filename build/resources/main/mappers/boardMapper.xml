@@ -6,7 +6,7 @@
 <mapper namespace="boardMapper">
 
     <!-- 사원 정보 등록 -->
-    <insert id="create" parameterType="BoardVO">
+    <insert id="create" parameterType="BoardDTO">
         INSERT INTO tb_emp_manage (
             empId,
             empName,
@@ -34,7 +34,7 @@
     </insert>
 
     <!-- 사원정보 읽기 -->
-    <select id="read" resultType="BoardVO">
+    <select id="read" resultType="BoardDTO">
         SELECT
             bno,
             empId,
@@ -53,7 +53,7 @@
     </select>
 
     <!-- 사원정보 수정 -->
-    <update id="update" parameterType="BoardVO">
+    <update id="update" parameterType="BoardDTO">
         UPDATE tb_emp_manage SET
             empName = #{empName},
             interphone = #{interphone},
@@ -74,7 +74,7 @@
     </delete>
 
     <!-- 사원 목록 불러오기 -->
-    <select id="listAll" resultType="BoardVO">
+    <select id="listAll" resultType="BoardDTO">
         SELECT
             bno,
             empId,
@@ -104,12 +104,12 @@
     </select>
 
     <!-- 총 사원정보 개수 -->
-    <select id="listAllCnt" resultType="Integer">
+    <select id="countAllList" resultType="Integer">
         SELECT COUNT(bno) FROM tb_emp_manage
     </select>
 
     <!-- 검색을 위한 동적 쿼리 -->
-    <select id="listSearch" resultType="BoardVO">/*TODO: resultMap 찾아봐*/
+    <select id="searchList" resultType="BoardDTO">/*TODO: resultMap 찾아봐*/
         <![CDATA[
         SELECT
             bno,
@@ -147,15 +147,40 @@
 
     <!-- include 되는 검색 조건문 -->
     <sql id="search">
-        <if test="ftSearchType != null">
-            <if test="ftSearchType == 'working'.toString()">
-                AND isWorking LIKE CONCAT('%', #{keyword}, '%')
+        <if test="ftSearchType != null and ftSearchType != '' || sdSearchType != null and sdSearchType != ''">
+            <if test="ftSearchType != null and ftSearchType != ''">
+                AND isWorking LIKE CONCAT('%', #{ftSearchType}, '%')
             </if>
-            <if test="ftSearchType == 'retired'.toString()">
-                AND isWorking LIKE CONCAT('%', #{keyword}, '%')
+            <if test="sdSearchType == 'all'">
+                AND
+                (
+                bno LIKE CONCAT('%', #{keyword}, '%')
+                OR empId LIKE CONCAT('%', #{keyword}, '%')
+                OR empName LIKE CONCAT('%', #{keyword}, '%')
+                OR interphone LIKE CONCAT('%', #{keyword}, '%')
+                OR companyName LIKE CONCAT('%', #{keyword}, '%')
+                OR teamName LIKE CONCAT('%', #{keyword}, '%')
+                OR athority LIKE CONCAT('%', #{keyword}, '%')
+                OR inDate LIKE CONCAT('%', #{keyword}, '%')
+                OR outDate LIKE CONCAT('%', #{keyword}, '%')
+                OR pwdErCnt LIKE CONCAT('%', #{keyword}, '%')
+                OR register LIKE CONCAT('%', #{keyword}, '%')
+                )
             </if>
-            <if test="ftSearchType == 'rest'.toString()">
-                AND isWorking LIKE CONCAT('%', #{keyword}, '%')
+            <if test="sdSearchType == 'emp_name'">
+                AND empName LIKE CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="sdSearchType == 'emp_id'">
+                AND empId LIKE CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="sdSearchType == 'emp_interphone'">
+                AND interphone LIKE CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="sdSearchType == 'emp_company'">
+                AND companyName LIKE CONCAT('%', #{keyword}, '%')
+            </if>
+            <if test="sdSearchType == 'emp_athority'">
+                AND athority LIKE CONCAT('%', #{keyword}, '%')
             </if>
         </if>
     </sql>

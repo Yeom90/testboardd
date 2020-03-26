@@ -8,7 +8,7 @@
     <!--Mapper 사용시 매번 parameterType이나 resultType 치면 번거롭고, 지정루트들이 너무 길다.
           typeAliases로 미리 별칭을 지정해놓는다. BoardDTO 라는 이름으로 지정.-->
     <typeAliases>
-        <typeAlias type="test.board.vo.BoardVO" alias="BoardVO"/>
+        <typeAlias type="test.board.dto.BoardDTO" alias="BoardDTO"/>
     </typeAliases>
 
 </configuration>

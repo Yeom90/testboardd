@@ -155,7 +155,8 @@ $('#inDate').mouseenter(function () {
     }
 });
 
-//submit 누르기 전에 중복체크 했는지 확인
+
+//submit 누르기 전에 중복체크 했는지 확인 TODO: 수정필요(작동안함)
 function checkForm(){
     alert("1");
     if(isClickedEmpId && isClickedInterphone){

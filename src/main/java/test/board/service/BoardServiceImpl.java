@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import test.board.dao.BoardDAOImpl;
 import test.board.paging.Criteria;
 import test.board.searching.SearchCriteria;
-import test.board.vo.BoardVO;
+import test.board.dto.BoardDTO;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -25,18 +25,18 @@ public class BoardServiceImpl implements BoardService {
     }
 
     //사원정보 작성
-    public void create(BoardVO vo) throws Exception{
+    public void create(BoardDTO vo) throws Exception{
         logger.info("create Service: " + vo.toString()); //vo에 어떤데이터가 담겨오는지 로그 찍기
         boardDAOImpl.create(vo);
     }
 
     //사원정보 읽기
-    public BoardVO read(int bno) throws  Exception{
+    public BoardDTO read(int bno) throws  Exception{
         return boardDAOImpl.read(bno);
     }
 
     //사원정보 수정
-    public void update(BoardVO vo) throws Exception{
+    public void update(BoardDTO vo) throws Exception{
         logger.info("update Service: "+vo.toString());
         boardDAOImpl.update(vo);
     }
@@ -47,7 +47,7 @@ public class BoardServiceImpl implements BoardService {
     }
 
     //사원 목록
-    public List<BoardVO> getListAll(Criteria criteria) throws Exception{
+    public List<BoardDTO> getListAll(Criteria criteria) throws Exception{
         return boardDAOImpl.getListAll(criteria);
     }
 
@@ -62,12 +62,12 @@ public class BoardServiceImpl implements BoardService {
     }
 
     //총 게시물 개수
-    public int listAllCnt() throws Exception{
-        return boardDAOImpl.listAllCnt();
+    public int countAllList() throws Exception{
+        return boardDAOImpl.countAllList();
     }
 
     //검색된 게시글 목록 가져오기
-    public List<BoardVO> listSearch(SearchCriteria searchCriteria) throws Exception{
+    public List<BoardDTO> listSearch(SearchCriteria searchCriteria) throws Exception{
         return boardDAOImpl.listSearch(searchCriteria);
     }
 

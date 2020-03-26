@@ -15,7 +15,7 @@
         WebApplication 전체에 사용가능한 DB 연결, 로깅 기능들이 이용된다.
         ApplicationContext는 주로 XML 파일을 사용하여 bean 들을 설정한다. -->
 
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"><!--TODO: Apache commons DBCP 로 바꿀것-->
         <property name="driverClassName" value="org.mariadb.jdbc.Driver"/>
         <property name="url"
                   value="jdbc:mariadb://10.10.10.109:3306/seunghunyeom?useUnicode=yes&amp;characterEncoding=UTF-8"/> <!-- DB에 삽입하는 데이터가 한글이기 때문에 Unicode를 사용하고 UTF-8로 인코딩한다. -->
