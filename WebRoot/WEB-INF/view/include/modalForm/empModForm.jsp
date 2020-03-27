@@ -56,8 +56,8 @@
                                             <div class="input-group_1">
                                                 <div class="fl w115 mgr4">
                                                     <select id="companyModName" name="companyName" class="form-control kt-selectpicker">
-                                                        <option>본부명선택</option>
-                                                        <option>LG</option>
+                                                        <option value="">본부명선택</option>
+                                                        <option value="LG">LG</option>
                                                         <option>루키스</option>
                                                         <option>삼성</option>
                                                         <option>유비콤</option>

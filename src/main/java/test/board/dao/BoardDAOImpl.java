@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 import test.board.paging.Criteria;
 import test.board.searching.SearchCriteria;
-import test.board.vo.BoardVO;
+import test.board.dto.BoardDTO;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -34,19 +34,19 @@ public class BoardDAOImpl implements BoardDAO{
     }
 
 
-    public void create(BoardVO vo) throws Exception{
+    public void create(BoardDTO vo) throws Exception{
         logger.info("create DAO: " + vo.toString()); //vo에 어떤데이터가 담겨오는지 로그 찍기
         //모든 쿼리는 namespace.sqlId 의 구조로 구성된다.
         sqlST.insert(NAMESPACE + ".create", vo);
     }
 
-    public BoardVO read(int bno) throws Exception{
+    public BoardDTO read(int bno) throws Exception{
         //ibatis.sqlSession 에서 제공하는 selectOne 메소드는 오직 하나의 객체만을 리턴한다.
         //sqlSessionTemplate 에서 제공하는 int update (java.lang.String statement, java.lang.Object parameter)가 원형
         return sqlST.selectOne(NAMESPACE + ".read", bno);
     }
 
-    public void update(BoardVO vo) throws  Exception{
+    public void update(BoardDTO vo) throws  Exception{
         logger.info("update DAO: "+vo.toString());
         sqlST.update(NAMESPACE + ".update", vo);
     }
@@ -55,7 +55,7 @@ public class BoardDAOImpl implements BoardDAO{
         sqlST.delete(NAMESPACE + ".delete", bno);
     }
 
-    public List<BoardVO> getListAll(Criteria criteria) throws Exception{
+    public List<BoardDTO> getListAll(Criteria criteria) throws Exception{
         //List<E> selectList(String statement)가 원형이며 boardMapper.listAll 을 실행하여 BoardVO 객체들로 구성된 List 를 반환한다.
         return sqlST.selectList(NAMESPACE + ".listAll", criteria);
     }
@@ -68,12 +68,12 @@ public class BoardDAOImpl implements BoardDAO{
         return sqlST.selectOne(NAMESPACE + ".checkInterphone", interphone);
     }
 
-    public int listAllCnt()throws Exception{
-        return sqlST.selectOne(NAMESPACE + ".listAllCnt");
+    public int countAllList()throws Exception{
+        return sqlST.selectOne(NAMESPACE + ".countAllList");
     }
 
-    public List<BoardVO> listSearch(SearchCriteria searchCriteria) throws Exception{
-        return sqlST.selectList(NAMESPACE + ".listSearch", searchCriteria);
+    public List<BoardDTO> listSearch(SearchCriteria searchCriteria) throws Exception{
+        return sqlST.selectList(NAMESPACE + ".searchList", searchCriteria);
     }
 
     public int countSearchedList(SearchCriteria searchCriteria) throws Exception{

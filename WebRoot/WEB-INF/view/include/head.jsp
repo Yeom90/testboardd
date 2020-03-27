@@ -10,9 +10,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:set var="path" value="${pageContext.request.contextPath}"/>
 <!-- begin::Head -->
-<head>
     <meta charset="utf-8" />
-    <title>테스트 KG이니시스 상담관리 시스템</title>
     <meta name="description" content="Static table examples">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="/resources/css/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
@@ -57,6 +55,4 @@
             margin-right: -4px;
         }
     </style>
-</head>
-
 <!-- end::Head -->

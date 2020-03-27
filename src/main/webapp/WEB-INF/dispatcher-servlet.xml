@@ -10,15 +10,22 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!--  -->
+    <!-- 스프링 프레임 워크에서 지원
+        xml 에 bean 등록을 안해도 클래스를 인스턴스하여 servlet context 컨테이너에 등록 한다.
+        base-package 의 value 값으로 있는 패키지 내에서만 @Component, @Controller, @Repository, @Service,
+        이 4가지 어노테이션에 담긴 메타정보를 이용하여 해당 어노테이션이 선언된 클래스를 찾아 servlet 컨테이너에 등록 한다.
+        추가적으로 @Autowired 와 @Qualifier 어노테이션을 사용할 수 있게 해준다.-->
     <context:component-scan base-package="test.board"/>
 
+    <!-- mvc:annotation-driven 엘리먼트는 DefaultAnnotationHandlerMapping 과 AnnotationMethodHandlerAdapter 를 servlet context 에 빈으로 등록하여
+          @RequestMapping 을 HandlerMapping 이 찾고 HandlerAdapter 가 요청을 전달해서 받은 리턴값을 Dispatcher-servlet 에게 보내준다. -->
     <mvc:annotation-driven/>
 
+    <!--  -->
     <mvc:resources mapping="/resources/**" location="/resources/"/>
     <mvc:resources mapping="/assets/**" location="/assets/"/>
 
-
+    <!--  -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>
         <property name="suffix" value=".jsp"/>

@@ -1,7 +1,4 @@
-package test.board.vo;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+package test.board.dto;
 
 /*VO(ValueObject RealdOnly 속성) 계층간 데이터교환을 위한 자바빈즈, 로직을 가지면 안되고, getter, setter 메소드만 가지고 있다.
 * 필드명과 해당 테이블 레코드의 이름이 같아야 한다.
@@ -15,7 +12,7 @@ import java.time.LocalDateTime;
 *       VO b = new VO(1);
 *       a == b */
 //TODO: VO와 DTO의 차이점 명확하게 찾아봐!
-public class BoardVO {
+public class BoardDTO {
 
     private int bno;
     private String empId;

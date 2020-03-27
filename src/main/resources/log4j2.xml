@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="INFO">
+
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"/>
         </Console>
+
+        <RollingFile name="file" fileName="/web/projects/seunghunyeom/logs/testboardd/testboardd.log"
+                     filePattern="/web/projects/seunghunyeom/logs/testboardd/testboardd_%d{yyyyMMdd}.log">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </RollingFile>
     </Appenders>
+
     <Loggers>
-        <Root level="info" additivity="false">
+        <!--  Log everything in custom package -->
+        <Logger name="test.board" level="info" additivity="false">
             <AppenderRef ref="console"/>
+            <AppenderRef ref="file"/>
+        </Logger>
+
+        <!-- Log everything in Spring Boot -->
+        <Logger name="org.springframework.web" level="info" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+
+        <Logger name="org.springframework.core" level="debug" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+
+        <Root level="error">
+            <AppenderRef ref="console"/>
+            <AppenderRef ref="file"/>
         </Root>
     </Loggers>
 </Configuration>
