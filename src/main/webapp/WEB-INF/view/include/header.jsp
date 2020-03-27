@@ -11,7 +11,7 @@
     <!--  로고 접기 기능 시작 -->
     <div class="kt-aside__brand kt-grid__item " id="kt_aside_brand">
         <div class="kt-aside__brand-logo">
-            <a href="index.html">
+            <a href="/">
                 <img alt="Logo" src="../resources/images/logo-light.png"/>
             </a>
         </div>

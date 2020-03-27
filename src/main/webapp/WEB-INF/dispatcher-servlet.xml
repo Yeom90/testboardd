@@ -17,7 +17,8 @@
         추가적으로 @Autowired 와 @Qualifier 어노테이션을 사용할 수 있게 해준다.-->
     <context:component-scan base-package="test.board"/>
 
-    <!--  -->
+    <!-- mvc:annotation-driven 엘리먼트는 DefaultAnnotationHandlerMapping 과 AnnotationMethodHandlerAdapter 를 servlet context 에 빈으로 등록하여
+          @RequestMapping 을 HandlerMapping 이 찾고 HandlerAdapter 가 요청을 전달해서 받은 리턴값을 Dispatcher-servlet 에게 보내준다. -->
     <mvc:annotation-driven/>
 
     <!--  -->
